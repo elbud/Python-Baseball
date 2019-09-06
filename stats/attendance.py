@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from stats.data import games
+from data import games
 
 attendance = games.loc[(games['type'] == 'info') & (games['multi2'] == 'attendance'), ['year', 'multi3']]
 attendance.columns = ['year', 'attendance']
